@@ -3,14 +3,12 @@
 // Another hint: use intersection observer.
 
 import { debounce } from "underscore";
-import { Story } from "./story";
 
 export class App {
   private readonly HEADER = ".navbar";
 
   public init(): void {
     this.addEventListeners();
-    this.initStory();
   }
 
   get header(): HTMLElement {
@@ -32,9 +30,5 @@ export class App {
       this.header.classList.remove("shrink");
       this.header.classList.add("grow");
     }
-  }
-
-  private initStory(): void {
-    new Story().init();
   }
 }

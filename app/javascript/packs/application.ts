@@ -1,6 +1,3 @@
-// This allows angular to be loaded twice for illustrative purposes.
-import * as _ from "../users";
-
 import { App } from "../app";
 
 document.addEventListener("DOMContentLoaded", () => {
